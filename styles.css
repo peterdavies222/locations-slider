@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+    font-family: 'Montserrat';
+}
+
+h1 {
+    margin-left: 25px;
+}
+
+.glider-contain {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.glider {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.glider figure {
+    display: block;
+    margin: 1.5em;
+    width: 400px !important;
+    height: 250px !important;
+    position: relative;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.glider figure:hover {
+    transform: scale(1.1);
+}
+
+.glider-contain figure img {
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.glider-text-background {
+    position: absolute;
+    z-index: -4;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5)
+}
+
+.glider-text {
+    width: 85%;
+    height: fit-content;
+    position: absolute;
+    bottom: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.glider h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.glider-contain {
+    width: 85% !important;
+}
+
+.glider-prev {
+    left: -40px;
+    top: 50%;
+}
+
+.glider-next {
+    right: -50px;
+    top: 50%;
+}
+
+.glider .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+}
